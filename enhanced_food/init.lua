@@ -65,6 +65,25 @@ core.register_craftitem( "enhanced_food:bone_knife", {
 
 core.register_craft({
     type = "shaped",
-    output = "enhanced_food_bone_knife",
+    output = "enhanced_food:bone_knife",
     recipe = {
-        {"", ""}}})
+        {"", "mcl_mobitems_bone", "",}
+        {"", "mcl_mobitems_bone", "",}
+        {"", "mcl_core:stick", "",}
+    }
+})
+
+core.register_craftitem("enhanced_food:bone_sword",{
+    description = "bone sword",
+    inventory_image = "enhanced_food_bone_sword.png"
+})
+
+core.register_craft({
+    type = "shaped",
+    output = "enhanced_food:bone_sword",
+    recipe = {
+        {"", "mcl_core:iron", ""},
+        {"", "mcl_core:iron", ""},
+        {"mcl_core:iron", "enhanced_food:bone_knife", "mcl_core:iron"},
+    }
+})
