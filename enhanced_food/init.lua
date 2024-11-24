@@ -87,3 +87,38 @@ core.register_craft({
         {"mcl_core:iron", "enhanced_food:bone_knife", "mcl_core:iron"},
     }
 })
+
+
+core.register_craftitem("enhanced_food:sliced_cheese", {
+    description = "sliced cheese",
+    inventory_image = "enhanced_food_sliced_cheese.png"
+})
+
+core.register_craft({
+    type = "shapeless",
+    output = "enhanced_food:sliced_cheese 6",
+    recipe = {
+        "enhanced_food:cheese",
+        "enhanced_food:knife",
+    },
+})
+
+
+core.register_craft({
+    type = "shapeless",
+    output = "enhanced_food:sliced_cheese 6",
+    recipe = {
+        "enhanced_food:cheese",
+        "enhanced_food:bone_knife",
+    },
+})
+
+
+core.register_craft({
+    type = "shapeless",
+    output = "enhanced_food:sliced_cheese 6",
+    recipe = {
+        "enhanced_food:cheese",
+        "enhanced_food:bone_sword",
+    },
+})
