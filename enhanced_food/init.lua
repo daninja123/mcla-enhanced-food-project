@@ -122,3 +122,20 @@ core.register_craft({
         "enhanced_food:bone_sword",
     },
 })
+
+core.register_tool("enhanced_food:knife", {
+    description = "knife",
+    inventory_image = "enhanced_food_knife.png",
+    tool_capabilities = {
+        full_punch_interval = 1,
+        max_drop_level = 1,
+        groupcaps = {
+            crumbly = {
+                maxlevel = 2,
+                uses = 150,
+                times = { [1]=1.60, [2]=1.20, [3]=0.80 }
+            },
+        },
+        damage_groups = {fleshy=2},
+    },
+})
