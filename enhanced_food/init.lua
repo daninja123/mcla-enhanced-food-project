@@ -18,12 +18,12 @@ core.register_craft({
 
 
 core.register_craft({
-    type = "shape",
+    type = "shaped",
     output = "enhanced_food:knife",
     recipe = {
-        {"", "", "",}
-        {"", "mcl_copper:copper_ingot", "",}
-        {"", "mcl_core:stick", "",}
+        {"", "", ""                             },
+        {"", "mcl_copper:copper_ingot", ""      },
+        {"", "mcl_core:stick", ""               },
     }
 })
 
@@ -52,9 +52,9 @@ core.register_craft({
     type = "shaped",
     output = "enhanced_food:frying_pan",
     recipe = {
-       {"mcl_core:iron","mcl_core:iron","mcl_core:iron",},
-       {"", "mcl_core:iron", "",}
-       {"", "mcl_core:iron", "",}
+       {"mcl_core:iron","mcl_core:iron","mcl_core:iron"                 },
+       {"", "mcl_core:iron", ""                                         },
+       {"", "mcl_core:iron", ""                                         },
     }
 })
 
@@ -67,9 +67,9 @@ core.register_craft({
     type = "shaped",
     output = "enhanced_food:bone_knife",
     recipe = {
-        {"", "mcl_mobitems_bone", "",}
-        {"", "mcl_mobitems_bone", "",}
-        {"", "mcl_core:stick", "",}
+        {"", "mcl_mobitems_bone", ""            },
+        {"", "mcl_mobitems_bone", ""            },
+        {"", "mcl_core:stick", ""               },
     }
 })
 
@@ -82,9 +82,9 @@ core.register_craft({
     type = "shaped",
     output = "enhanced_food:bone_sword",
     recipe = {
-        {"", "mcl_core:iron", ""},
-        {"", "mcl_core:iron", ""},
-        {"mcl_core:iron", "enhanced_food:bone_knife", "mcl_core:iron"},
+        {"", "mcl_core:iron", ""                                        },
+        {"", "mcl_core:iron", ""                                        },
+        {"mcl_core:iron", "enhanced_food:bone_knife", "mcl_core:iron"   },
     }
 })
 
